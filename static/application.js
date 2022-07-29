@@ -55,6 +55,9 @@ class haste_document {
 	save(data, callback){
 		if (this.locked)
 			return false;
+		if (!data.endsWith('\n')) {
+			data += '\n';
+		}
 		this.data = data;
 		let _this = this;
 		$.ajax(`${_this.app.baseUrl}documents`, {
