@@ -34,7 +34,7 @@
 		"mocha": "^8.4.0"
 	},
 	"scripts": {
-		"build": "npm install && npx babel --plugins minify-mangle-names --no-comments --minified static/application.js --out-file static/application.min.js",
+		"build": "pnpm install && npx babel --plugins minify-mangle-names --no-comments --minified static/application.js --out-file static/application.min.js",
 		"start": "node server.js",
 		"test": "mocha --recursive",
 		"testformat": "npx eslint ./"
