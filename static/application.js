@@ -61,7 +61,7 @@ class haste_document {
 			type: 'post',
 			data: data,
 			dataType: 'json',
-			contentType: 'application/json; charset=utf-8',
+			contentType: 'text/plain; charset=utf-8',
 			success: function (res){
 				_this.locked = true;
 				_this.key = res.key;
