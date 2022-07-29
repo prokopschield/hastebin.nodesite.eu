@@ -1,4 +1,6 @@
 module.exports = {
+	"name": "hastebin.nodesite.eu",
+	
 	//address and port to which server will bind, host can also be a hostname
 	"host": "127.0.0.1",
 	"port": 7777,
